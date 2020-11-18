@@ -1,6 +1,6 @@
 {
-    "name": "designmynight/laravel-log-mailer",
-    "description": "A package to support logging via email in Laravel",
+    "name": "mickpaliokas/laravel-log-mailer",
+    "description": "A fork of a package to support logging via email in Laravel",
     "homepage": "https://github.com/designmynight/laravel-log-mailer",
     "license": "MIT",
     "keywords": [
