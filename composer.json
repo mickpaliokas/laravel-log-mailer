@@ -11,7 +11,11 @@
         "designmynight"
     ],
     "require": {
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^8.15",
+        "monolog/monolog": "^2.1"
+    },
+    "require-dev": {
+        "illuminate/mail": "^8.15"
     },
     "autoload": {
         "psr-4": {

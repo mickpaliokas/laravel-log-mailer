@@ -77,7 +77,7 @@ class MailableLogger
         $mailable = new $mailable();
 
         if (empty($recipients = $this->config('to'))) {
-            throw new InvalidArgumentException('To addresses required');
+            throw new \InvalidArgumentException('To addresses required');
         }
 
         foreach ($recipients as $recipient) {
