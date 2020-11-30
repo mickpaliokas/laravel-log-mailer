@@ -25,8 +25,8 @@ class MailableLogger
         $mailHandler = new MailableHandler(
             $this->buildMailable(),
             $this->subjectFormatter(),
-            $this->config('level'),
-            $this->config('bubble')
+            $this->config('level', Logger::DEBUG),
+            $this->config('bubble', true)
         );
 
         $mailHandler->setFormatter(new HtmlFormatter());
@@ -99,11 +99,11 @@ class MailableLogger
      * Get the value from the passed in config.
      *
      * @param string $field
-     *
+     * @param mixed|null $default
      * @return mixed
      */
-    private function config(string $field)
+    private function config(string $field, $default = null)
     {
-        return $this->config[$field] ?? null;
+        return $this->config[$field] ?? $default;
     }
 }

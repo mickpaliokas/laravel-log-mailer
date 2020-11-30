@@ -19,7 +19,7 @@ class MailableHandler extends MailHandler
      *
      * @return void
      */
-    public function __construct(Mailable $mailable, LineFormatter $subjectFormatter, $level = Logger::DEBUG, $bubble = true)
+    public function __construct(Mailable $mailable, LineFormatter $subjectFormatter, int $level = Logger::DEBUG, bool $bubble = true)
     {
         parent::__construct($level, $bubble);
         $this->mailer = app()->make('mailer');
